@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>form</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+      
+
+    </head>
+    <body>
+        
+
+<div class="wrapper">
+  <div class="sidebar">
+    <h2>.panne</h2>
+    <ul>
+      <li><a href="#"><i class="fas fa-home"></i>Overview</a></li>
+      <li><a href="#"><i class="fas fa-signal"></i>Stats</a></li>
+      <li><a href="#"><i class="fas fa-folder-open"></i>Project</a></li>
+      <li><a href="#"><i class="fas fa-comments"></i>Chats</a></li>
+      <li><a href="#"><i class="fas fa-calendar"></i>Calender</a></li>
+      <br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/><br/><br/> <br/><br/>
+     
+      <li><a href="#"><i class="fas fa-bars"></i>Setting</a></li>
+      <li><a href="#"><i class="fas fa-sign-in-alt"></i>Logout</a></li>
+      
+    
+    </ul>
+    <div class="social_media">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+  <div class="main_content">
+    <div class="header">
+        <div class="wrap">
+       <div class="search">
+      <input type="text" class="searchTerm" placeholder="What are you looking for?">
+      <button type="submit" class="searchButton">
+        <i class="fa fa-search"></i>
+     </button>
+     
+     
+   </div>
+  
+</div>
+<div class="right"><i class='far fa-bell'></i>
+</div>
+<div><i class='fas fa-question'></i></div>
+<div class="user"><i class='fas fa-user-alt'></i></div>
+    </div>
+    <div class="info">
+    <div class="modal" id="todo_form">
+      <div class="header">
+        <div class="title">Add Todo</div>
+        <button class="btn close-modal">&times;</button>
+      </div>
+      <div class="body">
+        <input type="text" id="todo_input" />
+        <input type="submit" value="Add Todo" id="todo_submit" />
+      </div>
+    </div>
+    <div class="main">
+      <p>Project</p>
+       <form class="form">
+  <label for="birthday">Date:</label>
+  <input type="date" id="birthday" name="birthday">
+  <input type="submit">
+   </form>
+    </div>
+    <div class="todo-container">
+      <div class="status" id="no_status">
+        <h1>To Do</h1>
+        <button id="add_btn" data-target-modal="#todo_form">+</button>
+        <div class="todo" draggable="true">
+          Buy the mango
+
+          <span class="close">&times;</span>
+        </div>
+      </div>
+        
+      <div class="status">
+        <h1>In Progress</h1>
+      </div>
+      <div class="status">
+        <h1>Completed</h1>
+      </div>
+    </div>
+
+    <div id="overlay"></div>
+  </div>
+</div>
+
+ <script src="script.js"></script>
+    </body>
+
+</html>
